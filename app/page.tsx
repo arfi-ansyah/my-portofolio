@@ -317,8 +317,8 @@ export default function Home() {
                 title: "Website Profil Desa",
                 company: "Kelurahan Paras, Cepogo, Boyolali",
                 desc: "Website profil desa sebagai media informasi dan publikasi digital untuk masyarakat. Menampilkan informasi desa, berita, dan layanan administrasi secara online.",
-                image: "/projects/profil-desa.png",
-                link: "#",
+                image: "https://api.microlink.io/?url=https://website-profil-desa-paras.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
+                link: "https://website-profil-desa-paras.vercel.app/",
                 stack: [],
                 color: "from-amber-500/20 to-orange-500/5",
                 border: "hover:border-amber-500/40",
@@ -357,22 +357,19 @@ export default function Home() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    unoptimized
                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    onError={(e) => {
-                      // fallback jika gambar belum ada
-                      (e.target as HTMLImageElement).style.display = "none";
-                    }}
                   />
                   {/* Fallback placeholder jika gambar belum ada */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center opacity-30">
+                    {/* <div className="text-center opacity-30">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="mx-auto mb-2">
                         <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" strokeWidth="2" />
                         <path d="M4 30l10-8 8 6 8-10 14 12" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
                         <circle cx="15" cy="18" r="3" stroke="currentColor" strokeWidth="2" />
                       </svg>
                       <p className="text-xs text-gray-400">Preview</p>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Stack badges overlay */}
