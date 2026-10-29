@@ -328,8 +328,8 @@ export default function Home() {
                 title: "Pendataan Warga",
                 company: "Kelurahan Paras, Cepogo, Boyolali",
                 desc: "Sistem pendataan warga berbasis web untuk membantu pengelolaan administrasi desa secara digital, efisien, dan terstruktur.",
-                image: "/projects/pendataan-warga.png",
-                link: "#",
+                image: "https://api.microlink.io/?url=https://pendataan-warga-mu.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
+                link: "https://pendataan-warga-mu.vercel.app/",
                 stack: [],
                 color: "from-violet-500/20 to-purple-500/5",
                 border: "hover:border-violet-500/40",
@@ -407,6 +407,8 @@ export default function Home() {
                   <a
                     href={project.link}
                     className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-teal-500 border border-white/10 hover:border-teal-500 text-white text-sm font-semibold rounded-full transition-all duration-200 group/btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Lihat Project
                     <svg
